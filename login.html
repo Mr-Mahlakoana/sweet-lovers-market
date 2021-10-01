@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sweet lovers market login</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="css/main.css" />
+
+        <link rel="stylesheet" href="css/fontAwesome.css" />
+    </head>
+
+    <body class="login-body">
+        <!--header-->
+        <header class="nav-header">
+            <img class="logo" src="img/logo.svg" alt="logo" />
+            <i class="fa fa-bars" id="manu-bar"></i>
+            <!-- navbar  -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </nav>
+            <!-- navbar  end -->
+            <a href="#" class="contats"
+                ><i class="fas fa-phone"></i> + 012 930 4832</a
+            >
+            <a href="login.html" class="cart-items"
+                ><i class="fa fa-user"></i> Sign in</a
+            >
+        </header>
+        <!--header end-->
+
+        <!--toggle manu-->
+        <div class="targgle-manu-container" id="toggle-manu">
+            <ul class="targgle-links">
+                <li><a class="tgl-link-item" href="index.html">Home</a></li>
+                <li><a class="tgl-link-item" href="about.html">About</a></li>
+                <li><a class="tgl-link-item" href="store.html">Store</a></li>
+            </ul>
+            <a href="login.html" class="Sign-in-pass">Sign in</a>
+        </div>
+        <!--toggle manu end-->
+
+        <div class="form-container">
+            <form action="store.html" method="#">
+                <img class="login-logo" src="img/logo.svg" alt="" /><br />
+                <h2 class="log-in-tittle">Login Here</h2>
+                <br />
+                <label class="labels">Username</label><br />
+                <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Enter username"
+                /><br />
+                <label class="labels">Password</label><br />
+                <input
+                    class="input-text"
+                    type="password"
+                    placeholder="Enter password"
+                /><br />
+                <button class="submit-button" type="submit">Login</button><br />
+                <label class="lost-password">Lost your Password ?</label><br />
+                <label class="no-account">don't have an account ?</label><br />
+            </form>
+        </div>
+
+        <div class="form-container-register">
+            <form action="store.html" class="register-form">
+                <img class="login-logo" src="img/logo.svg" alt="" /><br />
+                <h2 class="register-tittle">Register Here</h2>
+                <br />
+                <div class="form-inputs">
+                    <label class="labels">First Name</label><br />
+                    <input
+                        class="input-text"
+                        type="text"
+                        placeholder="Enter firstname"
+                    /><br />
+                    <label class="labels">Second name</label><br />
+                    <input
+                        class="input-text"
+                        type="text"
+                        placeholder="Enter secondname"
+                    /><br />
+                    <label class="labels">Email</label><br />
+                    <input
+                        class="input-text"
+                        type="text"
+                        placeholder="Email"
+                    /><br />
+                    <label class="labels">Password</label><br />
+                    <input
+                        class="input-text"
+                        type="password"
+                        placeholder="Enter password"
+                    /><br />
+                    <label class="labels">Re-type password</label><br />
+                    <input
+                        class="input-text"
+                        type="password"
+                        placeholder="Enter password"
+                    /><br />
+                </div>
+                <button class="submit-button register" type="submit">
+                    Register</button
+                ><br />
+            </form>
+        </div>
+        <script>
+            let noAccount = document.querySelector(".no-account");
+            let noAccountForm = document.querySelector(".form-container");
+            let registerForm = document.querySelector(
+                ".form-container-register"
+            );
+            noAccount.addEventListener("click", function () {
+                registerForm.style.opacity = 1;
+                noAccountForm.style.display = "none";
+            });
+
+            let manuBar = document.getElementById("manu-bar");
+            let toggleManu = document.getElementById("toggle-manu");
+            manuBar.addEventListener("click", function () {
+                toggleManu.classList.toggle("active");
+                toggleManu.classList.add("active-logg-manu");
+            });
+        </script>
+    </body>
+</html>

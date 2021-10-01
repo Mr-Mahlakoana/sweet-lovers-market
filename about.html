@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sweet lovers market about</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--stylesheet-->
+        <link rel="stylesheet" href="css/main.css" />
+        <!--font awesome-->
+        <link rel="stylesheet" href="css/fontAwesome.css" />
+    </head>
+
+    <body class="about-body">
+        <!--<div class="dynamic-navbar"></div>-->
+        <!--header--->
+        <header>
+            <img class="logo" src="img/logo.svg" alt="logo" />
+            <i class="fa fa-bars" id="manu-bar"></i>
+            <!-- navbar  -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </nav>
+            <!-- navbar  end -->
+            <a href="#" class="contats"
+                ><i class="fas fa-phone"></i> + 012 930 4832</a
+            >
+            <a href="login.html" class="cart-items"
+                ><i class="fa fa-user"></i> Sign in</a
+            >
+        </header>
+        <!--header end --->
+        <!-- </div>-->
+
+        <!--toggle manu--->
+        <div class="targgle-manu-container" id="toggle-manu">
+            <ul class="targgle-links">
+                <li><a class="tgl-link-item" href="index.html">Home</a></li>
+                <li><a class="tgl-link-item" href="about.html">About</a></li>
+                <li><a class="tgl-link-item" href="store.html">Store</a></li>
+            </ul>
+            <a href="login.html" class="Sign-in-pass">Sign in</a>
+        </div>
+        <!--toggle manu end--->
+
+        <!--about body container--->
+        <div class="about-page-container">
+            <div class="about-content-wrapper">
+                <h1 class="about-tittle">About <span class="us">Us</span></h1>
+                <div class="about-us-cont-wrap">
+                    <img class="about-us-img" src="img/section_01.png" alt="" />
+                    <p class="about-paragraph">
+                        Sweet lovers market provide you with all kind of
+                        sweetness you been craving all the time, our store is
+                        open 24/7 ,just place an order and it will be delivered
+                        at you front door. Sweet lovers market at you service...
+                    </p>
+                </div>
+                <h1 class="our-work-tittle">
+                    our <span class="us">work</span>
+                </h1>
+                <div class="our-work-container">
+                    <div class="par-see-cont-wrap">
+                        <p class="our-work-paragraph">
+                            We are a bakery company that bakes for events,
+                            ceremonies and others that may be interested in our
+                            products. We bake and deliver our products to our
+                            customers. We worked with some of the biggest
+                            companies and even today those companies still work
+                            with us because of the service we deliver.
+                        </p>
+                        <div class="see-more">see more</div>
+                    </div>
+                    <img
+                        class="our-work-img"
+                        src="img/shopping-fun.png"
+                        alt=""
+                    />
+                </div>
+                <h1 class="contact-us-tittle">
+                    contact <span class="us">Us</span>
+                </h1>
+                <div class="contact-us-wrap">
+                    <img
+                        class="img-cont-us"
+                        src="img/section_our_team_01.png"
+                        alt=""
+                    />
+                    <div class="cont-infor-wrap">
+                        <span class="contact-infor">contact infor</span>
+                        <span>Tell : 012 930 4832</span>
+                        <span>Mail : Sweetlover.market@gmail.com </span>
+                        <span
+                            >Physical Address : Polokwane Thabo Mbeki street
+                        </span>
+                        <div class="social-media-icons cont-us">
+                            <i class="fab fa-facebook facebook-about"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fas fa-phone facebook-square"></i>
+                        </div>
+                        <div class="google-maps">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d455.92413335456007!2d29.4500395!3d-23.9111315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d827a6d3019f%3A0xac207bf46b6745c8!2sRosebank%20College%20Polokwane%20Campus!5e0!3m2!1sen!2sza!4v1566639065002!5m2!1sen!2sza"
+                                width="600"
+                                height="450"
+                                frameborder="0"
+                                style="border: 0"
+                                allowfullscreen=""
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--about body container end--->
+
+        <!--Foooter -->
+        <div class="dynamic-footer">
+            <footer>
+                <div class="footer-botton">
+                    &copy; Sweetloversmarket.com | Designed by Mr Mahlakoana aka
+                    Gentle Giant
+                </div>
+            </footer>
+        </div>
+        <!--Foooter end-->
+
+        <!-- script js -->
+        <script>
+            let manuBar = document.getElementById("manu-bar");
+            let toggleManu = document.getElementById("toggle-manu");
+            manuBar.addEventListener("click", function (event) {
+                toggleManu.classList.toggle("active");
+            });
+        </script>
+    </body>
+</html>

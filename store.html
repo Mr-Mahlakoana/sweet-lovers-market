@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sweet lovers market store</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--stylesheet-->
+        <link rel="stylesheet" href="./css/main.css" />
+        <!--font awesome-->
+        <link rel="stylesheet" href="./css/fontAwesome.css" />
+        <!--main js-->
+        <link href="./js/main.js" rel="javascript" />
+    </head>
+
+    <body class="store-body">
+        <!--header-->
+        <header>
+            <img class="logo" src="./img/logo.svg" alt="logo" />
+            <i class="fa fa-bars" id="manu-bar"></i>
+            <!-- navbar  -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./store.html">Store</a></li>
+                </ul>
+            </nav>
+            <!-- navbar  end -->
+            <a href="#" class="contats"
+                ><i class="fas fa-phone"></i> + 012 930 4832</a
+            >
+            <a href="#" class="cart-items" onclick="openNav()"
+                ><i class="fas fa-shopping-cart"></i> (<span
+                    class="numeber-of-iterms"
+                    >0</span
+                >) items</a
+            >
+        </header>
+        <!--header end-->
+
+        <!-- iterms-card side overlay-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+            >
+            <div class="total-price">
+                Total : <span class="inner-total-price">R0.00</span>
+            </div>
+            <span class="shipping-card-iterms">Shipping</span>
+            <div class="overlay-content"></div>
+        </div>
+        <!-- iterms-card side overlay end-->
+
+        <!--toggle manu-->
+        <div class="targgle-manu-container" id="toggle-manu">
+            <ul class="targgle-links">
+                <li><a class="tgl-link-item" href="./index.html">Home</a></li>
+                <li><a class="tgl-link-item" href="./about.html">About</a></li>
+                <li><a class="tgl-link-item" href="./store.html">Store</a></li>
+            </ul>
+            <div class="view-showping-list-card" onclick="openNavSmall()">
+                Show card list
+            </div>
+        </div>
+        <!--toggle manu end-->
+
+        <!--store cotainer body-->
+        <div class="store-container-body">
+            <h1 class="store-tittle">our store</h1>
+            <!--store traker-->
+            <div class="store-iter-track">
+                <a href="#cakes" class="tracker">cakes</a>
+                <a href="#cupcakes" class="tracker">Cupcakes</a>
+                <a href="#doughnut" class="tracker">Doughnuts</a>
+            </div>
+            <!--store traker end-->
+            <div class="card-container" id="cakes">
+                <!--single card item-->
+                <div class="card first">
+                    <div class="price-corner">R300.00</div>
+                    <div class="img-wrapper">
+                        <img class="card-img" src="./img/cake-2.jpeg" alt="" />
+                    </div>
+                    <div class="content-wrapper">
+                        <h3 class="tittle">While cake</h3>
+                        <p class="price">R300.00</p>
+                        <div class="inner-content-wrapper">
+                            <span class="icon"
+                                ><i class="fas fa-globe-africa"></i
+                            ></span>
+                            <span class="icon"
+                                ><i class="fas fa-cart-plus"></i
+                            ></span>
+                            <span class="icon">
+                                <i class="far fa-heart"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+                <!---end of card item-->
+                <!--single card item-->
+                <div class="card">
+                    <div class="price-corner">R200.00</div>
+                    <div class="img-wrapper">
+                        <img class="card-img" src="./img/cake-1.jpeg" alt="" />
+                    </div>
+                    <div class="content-wrapper">
+                        <h3 class="tittle">Banana cake</h3>
+                        <p class="price">R200.00</p>
+                        <div class="inner-content-wrapper">
+                            <span class="icon"
+                                ><i class="fas fa-globe-africa"></i
+                            ></span>
+                            <span class="icon"
+                                ><i class="fas fa-cart-plus"></i
+                            ></span>
+                            <span class="icon">
+                                <i class="far fa-heart"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+                <!---end of card item-->
+                <!--single card item-->
+                <div class="card">
+                    <div class="price-corner">R250.00</div>
+                    <div class="img-wrapper">
+                        <img class="card-img" src="./img/cake-3.jpeg" alt="" />
+                    </div>
+                    <div class="content-wrapper">
+                        <h3 class="tittle">Pink stroberry cake</h3>
+                        <p class="price">R250.00</p>
+                        <div class="inner-content-wrapper">
+                            <span class="icon"
+                                ><i class="fas fa-globe-africa"></i
+                            ></span>
+                            <span class="icon"
+                                ><i class="fas fa-cart-plus"></i
+                            ></span>
+                            <span class="icon">
+                                <i class="far fa-heart"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+                <!---end of card item-->
+            </div>
+            <!--end of container cards-->
+            <div class="card-container" id="cupcakes">
+                <!--single card item-->
+                <div class="card first">
+                    <div class="price-corner">R10.00</div>
+                    <div class="img-wrapper">
+                        <img
+                            class="card-img"
+                            src="./img/cupcake-1.jpeg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="content-wrapper">
+                        <h3 class="tittle">cupcake extra chocolate</h3>
+                        <p class="price">R10.00</p>
+                        <div class="inner-content-wrapper">
+                            <span class="icon"
+                                ><i class="fas fa-globe-africa"></i
+                            ></span>
+                            <span class="icon"
+                                ><i class="fas fa-cart-plus"></i
+                            ></span>
+                            <span class="icon">
+                                <i class="far fa-heart"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+                <!---end of card item-->
+                <!--single card item-->
+                <div class="card">
+                    <div class="price-corner">R10.50</div>
+                    <div class="img-wrapper">
+                        <img
+                            class="card-img"
+                            src="./img/cupcake-2.jpeg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="content-wrapper">
+                        <h3 class="tittle">Extra brown Chocolate</h3>
+                        <p class="price">R10.50</p>
+                        <div class="inner-content-wrapper">
+                            <span class="icon"
+                                ><i class="fas fa-globe-africa"></i
+                            ></span>
+                            <span class="icon"
+                                ><i class="fas fa-cart-plus"></i
+                            ></span>
+                            <span class="icon">
+                                <i class="far fa-heart"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+                <!---end of card item-->
+                <!--single card item-->
+                <div class="card">
+                    <div class="price-corner">R9.99</div>
+                    <div class="img-wrapper">
+                        <img
+                            class="card-img"
+                            src="./img/cupcake-3.jpeg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="content-wrapper">
+                        <h3 class="tittle">Rich blue cream cupcake</h3>
+                        <p class="price">R9.99</p>
+                        <div class="inner-content-wrapper">
+                            <span class="icon"
+                                ><i class="fas fa-globe-africa"></i
+                            ></span>
+                            <span class="icon"
+                                ><i class="fas fa-cart-plus"></i
+                            ></span>
+                            <span class="icon">
+                                <i class="far fa-heart"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+                <!---end of card item-->
+            </div>
+            <!--end of container cards-->
+            <div class="card-container" id="doughnut">
+                <!--single card item-->
+                <div class="card first">
+                    <div class="price-corner">R10.00</div>
+                    <div class="img-wrapper">
+                        <img
+                            class="card-img"
+                            src="./img/doughnut-1.jpeg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="content-wrapper">
+                        <h3 class="tittle">Blue topping doughnut</h3>
+                        <p class="price">R10.00</p>
+                        <div class="inner-content-wrapper">
+                            <span class="icon"
+                                ><i class="fas fa-globe-africa"></i
+                            ></span>
+                            <span class="icon"
+                                ><i class="fas fa-cart-plus"></i
+                            ></span>
+                            <span class="icon">
+                                <i class="far fa-heart"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+                <!---end of card item-->
+                <!--single card item-->
+                <div class="card">
+                    <div class="price-corner">R10.50</div>
+                    <div class="img-wrapper">
+                        <img
+                            class="card-img"
+                            src="./img/doughnut-2.jpeg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="content-wrapper">
+                        <h3 class="tittle">Extra chocolate topping</h3>
+                        <p class="price">R10.50</p>
+                        <div class="inner-content-wrapper">
+                            <span class="icon"
+                                ><i class="fas fa-globe-africa"></i
+                            ></span>
+                            <span class="icon"
+                                ><i class="fas fa-cart-plus"></i
+                            ></span>
+                            <span class="icon">
+                                <i class="far fa-heart"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+                <!---end of card item-->
+                <!--single card item-->
+                <div class="card">
+                    <div class="price-corner">R9.99</div>
+                    <div class="img-wrapper">
+                        <img
+                            class="card-img"
+                            src="./img/doughnut-3.jpeg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="content-wrapper">
+                        <h3 class="tittle">Teddy doughnut</h3>
+                        <p class="price">R9.99</p>
+                        <div class="inner-content-wrapper">
+                            <span class="icon"
+                                ><i class="fas fa-globe-africa"></i
+                            ></span>
+                            <span class="icon"
+                                ><i class="fas fa-cart-plus"></i
+                            ></span>
+                            <span class="icon">
+                                <i class="far fa-heart"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+                <!---end of card item-->
+            </div>
+        </div>
+        <!--store cotainer body-->
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "40%";
+            }
+
+            function openNavSmall() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+
+        <!-- script js -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

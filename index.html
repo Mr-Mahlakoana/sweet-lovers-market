@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sweet lovers market</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--stylesheet-->
+        <link rel="stylesheet" href="css/main.css" />
+        <!--font awesome-->
+        <link rel="stylesheet" href="css/fontAwesome.css" />
+    </head>
+
+    <body>
+        <!--header--->
+        <header class="header-nav" style="display: flex">
+            <img
+                class="logo"
+                src="img/logo.svg"
+                alt="logo"
+                style="cursor: pointer"
+            />
+            <i class="fa fa-bars" id="manu-bar"></i>
+            <!--navbar-->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </nav>
+            <!-- navbar  end -->
+            <a href="#" class="contats"
+                ><i class="fas fa-phone"></i> + 012 930 4832</a
+            >
+            <a href="login.html" class="cart-items"
+                ><i class="fa fa-user"></i> Sign in</a
+            >
+        </header>
+        <div class="targgle-manu-container" id="toggle-manu">
+            <ul class="targgle-links">
+                <li><a class="tgl-link-item" href="index.html">Home</a></li>
+                <li><a class="tgl-link-item" href="about.html">About</a></li>
+                <li><a class="tgl-link-item" href="store.html">Store</a></li>
+            </ul>
+            <a href="login.html" class="Sign-in-pass">Sign in</a>
+        </div>
+        <!--header end--->
+
+        <!--banner-->
+        <div class="banner" style="position: relative">
+            <h1 class="wellcome">
+                wellcome to <span class="sweet-lovers">Sweet lover</span>market
+            </h1>
+            <a href="store.html" class="Wellcome-explore">Explore</a>
+        </div>
+        <!--end of banner-->
+        <style>
+            .banner {
+            	background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+            	url("img/cupcake-1.jpeg") center/cover fixed no-repeat;
+            	min-height: calc(100vh - 76px);
+            	align-items: center;
+            	position: relative;
+            	margin-top: 0rem;
+            	{
+        </style>
+
+        <!--Foooter -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section-about">
+                    <div class="domain">Sweetloversmarket.com</div>
+                    <div>
+                        <p class="about-infor">
+                            Sweet lovers market provide you all kind of
+                            sweetness you been craving all the time, our store
+                            is open 24/7 ,just place an order and it will be
+                            delivered at you front door. Sweet lovers market at
+                            you service...
+                        </p>
+                    </div>
+                    <div><i class="fas fa-phone footer">+ 012 930 4832</i></div>
+                    <div>
+                        <i class="fas fa-Email"> Sweetlover.market@gmail.com</i>
+                    </div>
+                    <div class="social-media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-phone facebook-square"></i>
+                    </div>
+                </div>
+                <div class="footer-section-links">
+                    <div class="links-footer-tittle">
+                        <span class="bracket">--- </span> Links
+                        <span class="bracket"> ---</span>
+                    </div>
+                    <a href="index.html" class="homelink-footer">Home</a>
+                    <a href="about.html" class="aboutlink-footer">About</a>
+                    <a href="store.html" class="storelink-footer">Store</a>
+                </div>
+                <div class="footer-section-contact">
+                    <h2 class="contact-us-footer-tittle">
+                        <span class="bracke">--- </span> Contact us
+                        <span class="bracke">--- </span>
+                    </h2>
+                    <input
+                        type="text"
+                        placeholder="Email address"
+                        class="contat-mail-address"
+                    /><br />
+                    <textarea class="contact-massage-area"></textarea><br />
+                    <button class="submit-contact-form">Sent</button>
+                </div>
+            </div>
+            <div class="footer-botton">
+                &copy; Sweetloversmarket.com | Designed by Mr Mahlakoana aka
+                Gentle Giant
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+        <!-- script js -->
+        <script>
+            let manuBar = document.getElementById("manu-bar");
+            let toggleManu = document.getElementById("toggle-manu");
+            manuBar.addEventListener("click", function (event) {
+                toggleManu.classList.toggle("active");
+            });
+        </script>
+    </body>
+</html>
