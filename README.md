@@ -6,6 +6,8 @@ This is a ecommerce website developed with html,css, and vanilla javascript, you
 
 👉 Demo : https://sweet-lovers-market.netlify.app/
 
+![SweetsLoversMarket](SweetsLoversMarket.png)
+
 ## How top run on your pc
 
 1 download the repo unzip it and open the index.html file 
